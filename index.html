@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>포트폴리오</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="style.css" />
     <style>
       .flex {
         display: flex;
@@ -44,6 +41,7 @@
         font-size: 60px;
         font-style: oblique;
       }
+
       .form button {
         width: 100%;
         padding: 16px 0;
@@ -57,6 +55,21 @@
         margin: 25px 0 10px;
         cursor: pointer;
         transition: 0.1s ease;
+      }
+      .media {
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+      }
+      @media (min-width: 320px) and (max-width: 800px) {
+        .media {
+          width: 300px;
+          height: 300px;
+          background-color: azure;
+        }
+      }
+      .card {
+        font-size: 50px;
       }
     </style>
   </head>
@@ -94,5 +107,38 @@
       />
       <div class="sub">The new Maybach 누구도 예상 못한 아우라</div>
     </main>
+
+    <section id="card">
+      <h1 class="card">더 알아보기</h1>
+      <img
+        height="500px"
+        src="images/benz-a benz-glb.jpg"
+        alt="benz-a benz-glb"
+      />
+      <img height="400px" src="images/benz eqe.jpg" alt="benz eqe" />
+    </section>
+
+    <nav class="flex">
+      <p class="text4">
+        Recharge Your Class 메르세데스-벤츠로부터 전기차의 클래스, 완성되다
+        성능부터 취향까지 고려한 전기차 라인업의 클래스를 만나보세요.
+      </p>
+      <button type="submit">자세히 보기</button>
+    </nav>
+
+    <section id="card">
+      <h2 class="card">
+        ©2023 메르세데스-벤츠 코리아(주) / 메르세데스-벤츠 파이낸셜 서비스
+        코리아(주) / 메르세데스-벤츠 모빌리티 코리아(주) 공급자 개인정보처리방침
+        (MBK) 개인정보처리방침 (MBFSK) 개인정보처리방침(MBMK)
+        개인정보처리방침(MmP) 개인정보처리방침(DSDbook) Mercedes-Benz AG Privacy
+        Statement 쿠키 법적 고지 온라인 세일즈 이용약관 딜러사 정보 위치정보사업
+        이용약관 메르세데스-벤츠 코리아㈜ 서울특별시 중구 한강대로 416 서울
+        스퀘어 9층 (우) 04637 대표자 성명 : 스테판 알브레히트 사업자 등록번호:
+        220-86-46545 호스팅서비스 제공자: Amazon Web Services, Inc. 고객 컨택
+        센터 경기도 부천시 원미구 부일로 223 투나 8층 (우) 14623 전화:
+        080-001-1886 이메일 : mbk_cs@mercedes-benz.com
+      </h2>
+    </section>
   </body>
 </html>
